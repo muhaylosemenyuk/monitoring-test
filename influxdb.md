@@ -26,10 +26,14 @@ sudo ufw allow 8086/tcp
 
 # -- Step 6: Set up your initial user:
 influx setup
-#  - Enter a Username for your initial user
-#  - Enter a Password and Confirm the Password for your user
-#  - Enter your initial Organization Name
-#  - Enter your initial Bucket Name
+#    Enter a Username for your initial user
+#    Enter a Password and Confirm the Password for your user
+#    Enter your initial Organization Name
+#    Enter your initial Bucket Name
 
 # That’s it! You have now set up InfluxDB and can begin using it to store and analyze your data.
+
+# -- Useful Commands
+# View tokens using the influx CLI:
+influx auth list
 ```

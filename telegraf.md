@@ -1,7 +1,7 @@
 #### Конфігурація telegraf (на робочих серверах)
 ```bash
 # -- Step 1: add the Telegraf repository to the APT source list. So, create a file /etc/apt/sources.list.d/influxdb.list and add the following:
-deb https://repos.influxdata.com/ubuntu bionic stable
+echo "deb https://repos.influxdata.com/ubuntu bionic stable" | sudo tee /etc/apt/sources.list.d/influxdb.list
 
 # -- Step 2: install Telegraf from the InfluxData repository with the following commands:
 curl -s https://repos.influxdata.com/influxdata-archive_compat.key > influxdata-archive_compat.key
